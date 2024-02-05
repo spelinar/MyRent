@@ -32,7 +32,7 @@ import {useComponentTranslations} from "@/plugins/dynamicTranslations";
 const props = defineProps<{
   landlord: Landlord
 }>()
-
+console.log(Promise(), 'sddsdsds')
 const avatarProfile = avatar
 const landLordTranslationKey: Landlord = {
   name: "Imię",
@@ -45,9 +45,7 @@ const landLordTranslationKey: Landlord = {
   email: "Email"
 }
 const { locale } = useI18n();
-const { localTranslations } = useComponentTranslations(locale.value)
-console.log(localTranslations.value)
-// const { localTranslations } = useComponentTranslations(locale.value);
+const { localTranslations } = useComponentTranslations(locale.value, './')
 </script>
 
 <style scoped>
