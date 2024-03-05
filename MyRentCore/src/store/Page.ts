@@ -9,9 +9,15 @@ export const usePageStore = defineStore('page', () => {
   function addField() {
     fields.value.push({selectValue: '', textValue: ''})
   }
+  function clearFields(index) {
+    if (fields.value.length > 0) {
+      fields.value.splice(index, 1);
+    }
+  }
 
   return {
     fields,
-    addField
+    addField,
+    clearFields
   }
 })

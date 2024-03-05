@@ -9,9 +9,10 @@
         :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
       ></v-select>
       <v-text-field variant="outlined" v-model="field.textValue"></v-text-field>
+      <v-btn @click="page.clearFields(index)">send</v-btn>
+
     </div>
     <button @click="page.addField()">Add Field</button>
-    <v-btn @click="send()">send</v-btn>
   </div>
 </template>
 
