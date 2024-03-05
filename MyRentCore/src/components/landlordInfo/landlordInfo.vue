@@ -32,7 +32,6 @@ import {useComponentTranslations} from "@/plugins/dynamicTranslations";
 const props = defineProps<{
   landlord: Landlord
 }>()
-console.log(Promise(), 'sddsdsds')
 const avatarProfile = avatar
 const landLordTranslationKey: Landlord = {
   name: "Imię",

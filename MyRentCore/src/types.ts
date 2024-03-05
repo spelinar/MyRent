@@ -8,3 +8,8 @@ export interface Landlord {
   phoneNumber: string;
   email: string;
 }
+
+export interface Field {
+  selectValue: string;
+  textValue: string;
+}
